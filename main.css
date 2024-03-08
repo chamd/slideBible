@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+}
+
+#content {
+    position: absolute;
+    font-size: 110px;
+    top: 100px;
+    width: calc(100% - 100px);
+    left: 50px;
+    transition: .3s;
+}
+
+#bookChapter {
+    position: absolute;
+    font-size: 40px;
+    top: 20px;
+    width: 400px;
+    height: 70px;
+    left: calc(50% - 200px);
+    text-align: center;
+    line-height: 70px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    /* border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px; */
+    border-radius: 70px;
+    transition: .3s;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#command {
+    position: fixed;
+    width: 30px;
+    height: 70px;
+    left: calc(50% - 35px);
+    bottom: -80px;
+    outline: none;
+    border: none;
+    padding: 0px 20px;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .3s ease;
+}
+
+#verse {
+    font-weight: bolder;
+    /* -webkit-text-stroke: 5px red; */
+}
+
+#lengthChapter {
+    left: calc(50% - 260px);
+}
+
+#lengthVerse {
+    left: calc(50% + 220px);
+}
+
+#lengthChapter, #lengthVerse {
+    position: absolute;
+    font-size: 20px;
+    top: 35px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    outline: 3px solid black;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bolder;
+    display: none;
+}
+
+#alertBox {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    background-color: red;
+}
